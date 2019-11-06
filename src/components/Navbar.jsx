@@ -13,9 +13,15 @@ const Navbar = () => {
     document.body.classList.toggle("dark-mode");
   };
 
+  const darkModeLabel = {
+    marginLeft: 'auto',
+    marginRight: '10px',
+  };
+
   return (
     <nav className="navbar">
       <h1>Crypto Tracker</h1>
+      <h4 style={darkModeLabel}>Toggle Dark Mode</h4>
       <div className="dark-mode__toggle">
         <div onClick={toggleMode} className={darkMode ? 'toggle toggled' : 'toggle'} />
       </div>
